@@ -1,0 +1,36 @@
+{
+  "name": "card-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:es": "eslint \"packages/**/*.ts\"",
+    "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"packages/*\"",
+    "commit": "git-cz",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "commitizen": "^4.3.1",
+    "cspell": "^8.1.0",
+    "cz-git": "^1.10.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.7",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.1.0"
+  }
+}

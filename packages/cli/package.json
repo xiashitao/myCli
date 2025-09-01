@@ -1,0 +1,29 @@
+{
+  "name": "@card-cli/cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "card-cli": "./bin/card-cli"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {  
+    "tsup": "^8.3.5",
+    "commander": "^13.1.0",
+    "consola": "^3.4.2",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
