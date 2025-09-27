@@ -6768,7 +6768,7 @@ var require_dist = __commonJS({
         const override2 = prompt2._override || {};
         questions = [].concat(questions);
         let answer, question, quit, name, type, lastPrompt;
-        const getFormattedAnswer = /* @__PURE__ */ function() {
+        const getFormattedAnswer = /* @__PURE__ */ (function() {
           var _ref = _asyncToGenerator(function* (question2, answer2, skipValidation = false) {
             if (!skipValidation && question2.validate && question2.validate(answer2) !== true) {
               return;
@@ -6778,7 +6778,7 @@ var require_dist = __commonJS({
           return function getFormattedAnswer2(_x, _x2) {
             return _ref.apply(this, arguments);
           };
-        }();
+        })();
         var _iterator = _createForOfIteratorHelper(questions), _step;
         try {
           for (_iterator.s(); !(_step = _iterator.n()).done; ) {

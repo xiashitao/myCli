@@ -9,3 +9,5 @@
 /test
 /test-results
 /test-results-*/
+/packages/*/node_modules
+.turbo
